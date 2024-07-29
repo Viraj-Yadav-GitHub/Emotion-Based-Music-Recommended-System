@@ -1,0 +1,56 @@
+<!-- quiz_form.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz: How's Your Mood?</h1>
+        <form method="post" action="http://localhost:5000/quiz">
+            <label for="mood">1. How do you feel right now?</label>
+            <select id="mood" name="mood" required>
+                <option value="happy">Happy</option>
+                <option value="sad">Sad</option>
+                <option value="calm">Calm</option>
+                <option value="excited">Excited</option>
+                <option value="stressed">Stressed</option>
+            </select>
+
+            <label for="energy">2. How would you describe your energy level?</label>
+            <select id="energy" name="energy" required>
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select>
+
+            <label for="focus">3. How focused are you right now?</label>
+            <select id="focus" name="focus" required>
+                <option value="focused">Focused</option>
+                <option value="distracted">Distracted</option>
+                <option value="neutral">Neutral</option>
+            </select>
+
+            <label for="motivation">4. How motivated are you feeling?</label>
+            <select id="motivation" name="motivation" required>
+                <option value="motivated">Motivated</option>
+                <option value="demotivated">Demotivated</option>
+                <option value="neutral">Neutral</option>
+            </select>
+
+            <label for="productivity">5. Rate your productivity level:</label>
+            <select id="productivity" name="productivity" required>
+                <option value="high">High</option>
+                <option value="average">Average</option>
+                <option value="low">Low</option>
+            </select>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

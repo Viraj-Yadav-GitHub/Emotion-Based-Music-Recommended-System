@@ -1,0 +1,83 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: #343a40;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the form */
+}
+
+ul {
+    list-style-type: none; /* Remove bullet points for the list */
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+label {
+    color: #495057;
+    font-weight: bold;
+}
+
+select {
+    padding: 12px;
+    width: 100%; /* Make the select element full width */
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Additional styling for buttons */
+input[type="reset"] {
+    background-color: #ffc107;
+    color: #212529;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+input[type="reset"]:hover {
+    background-color: #d39e00;
+}
