@@ -72,3 +72,4 @@ The app in current state can't be deployed on web as:
 - Rewrite code such that Video Streaming is done on client side instead of server side so as it make the app deployable
 
 Note: Model accuracy is not that great. It is ~66%. Further training and finetuning required. May try Vision Transformer Model.
+"# Emotion-Based-Music-Recommended-System" 
